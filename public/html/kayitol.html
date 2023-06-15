@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol | Ne Yesek</title>
+    <link rel="shortcut icon" href="../html/fav.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- JQuery -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script>
+        function Anasayfa()
+        {
+            window.location.href = "http://localhost:3000/";
+        }
+    </script>
+    <style>
+        #girisdiv
+        {
+            margin-top: 10%;
+            margin-left: 30%;
+            margin-right: 30%;
+            background-color: #cecece;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div id="girisdiv">
+        <div class="field">
+            <label id="isim" class="label">Ad</label>
+            <div class="control">
+              <input id="name" class="input" type="text" placeholder="Adınızı Tam Olarak Giriniz">
+            </div>
+          </div> 
+          <div class="field">
+            <label id="kullaniciadi" class="label">Kullanıcı Adı</label>
+            <div class="control has-icons-left has-icons-right">
+              <input id="nickname" class="input" type="text" placeholder="Kullanıcı Adınız">
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+            </div>
+            <!-- <p class="help is-success">Bu kullanıcı adı kullanılabilir</p> -->
+          </div>
+          
+          <div class="field">
+            <label id="sifre" class="label">Şifre</label>
+            <div class="control has-icons-left has-icons-right">
+              <input id="pass" class="input" type="password" placeholder="Şifre Giriniz" >
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-exclamation-triangle"></i>
+              </span>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox">
+                Onayladım ve Kabul Ediyorum <a href="#">Koşullar</a>
+              </label>
+            </div>
+          </div>
+          <div class="field is-grouped">
+            <div class="control">
+              <button id="kayitbtn" onclick=Kayit() class="button is-link">Kayıt Ol</button>
+            </div>
+            <div class="control">
+              <button onclick=Anasayfa() class="button is-link is-light">İptal</button>
+            </div>
+          </div>
+    </div>
+    <script src="../js/client.js"></script>
+    <script src="../js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap | Ne Yesek</title>
+    <link rel="shortcut icon" href="../html/fav.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- JQuery -->
+</head>
+<body>
+    
+  <div id="girisform">
+        <div class="field">
+            <label class="label">Kullanıcı Adı</label>
+            <div class="control">
+                <input id="nickname" class="input" type="text" placeholder="Kullanıcı Adı" name="username">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Şifre</label>
+            <div class="control">
+                <input id="pass" class="input" type="password" placeholder="Şifre" name="password">
+            </div>
+        </div>
+        <div class="field">
+            <div class="control">
+                <button onclick="Login()" class="button is-link">Giriş Yap</button>
+            </div>
+        </div>
+    </div>
+
+  <script src="../js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="../html/fav.ico" type="image/x-icon">
+    <title>Ne Yesek ?</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- JQuery -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src=""></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbar" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item">
+              Ana Sayfa
+            </a>
+      
+            <a href="/tarifler" class="navbar-item">
+              Tarifler
+            </a>
+            <a href="/rastgeletarif" class="navbar-item">
+              Rastgele Tarif
+            </a>
+      
+           
+            <a href="/bilgilendirme" class="navbar-item">
+              Bilgilendirme
+            </a>
+       
+          </div>
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a href="/kayitol" class="button is-primary">
+                  <strong>Kayıt Ol</strong>
+                </a>
+                <a href="/giris" class="button is-light">
+                  Giriş Yap
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="urunbtn">
+        <button class="button is-primary" onclick=UrunEkle() id="add-button">Ürün Ekle</button>
+        <button class="button is-primary" onclick=TarifEkle() id="add-button">Yemek Ekle</button>
+      </div>
+        <div class="tarifler">
+        </div>
+      <div id="grid">
+        <div id="item1">
+          <div class="wrapper">
+            <div class="search-input">
+              <a href="" target="_blank" hidden></a>
+              <input type="text" placeholder="Malzeme Giriniz...">
+              <div class="autocom-box">
+                
+              </div>
+              <div class="icon"><i class="fas fa-search"></i></div>
+            </div>
+            <div id="grid">
+              <div id="item1">
+                <div class="angry-grid">
+                  <div id="item-0">
+                    <label class="label">Seçilen Ana Malzeme : 
+                      <div id="selected-items">
+                        
+                      </div>
+                    </label>
+                    <button class="button is-primary" onclick=YemekAra() id="search-button">Ara</button>
+                    <button class="button is-danger" onclick=Temizle() id="clear-button">Temizle</button>
+                  </div>
+                </div>
+      
+                </div>
+              </div>
+              
+          </div>
+        </div>
+        <div id="item2">
+        </div>
+        <div id="item3"></div>
+      </div>
+
+
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Tarif Motoru</strong>
+          </p>
+          <div class="footer-widget">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="single-footer-widget">
+                    <h3>Hakkımızda</h3>
+                    <p>
+                      NeYesek, yemek tarifleri paylaşan bir web sitesidir.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="single-footer-widget">
+                    <h3>İletişim</h3>
+                    <p>
+                      İstanbul, Türkiye <br>
+                      +90 555 555 55 55 <br>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          
+        </div>
+      </footer>
+
+      <script src="../js/client.js"></script>
+</body>
+
+</html>
